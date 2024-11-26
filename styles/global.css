@@ -1,0 +1,45 @@
+body{
+    background-color: #F7F7F7;
+    
+}
+
+#top-bar {
+    background-color: #1a1f36; /* Cor azul escura da barra */
+    color: white;
+    padding: 15px 15px; /* Espaçamento interno para dar mais "respiro" */
+    font-size: 20px; /* Tamanho do texto */
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre os grupos de itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    font-family: 'Raleway', sans-serif; /* Mantém a tipografia consistente */
+}
+.left-section{
+    padding-left: 85px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.right-section{
+    padding-right: 74px;
+   
+}
+.right-section a {
+     /* Adiciona espaçamento interno */
+    border-left: 0.5px solid #e0e0e0; /* Barra fina entre os itens */
+}
+
+/* Estilizando os itens dentro da top-bar */
+#top-bar a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Links em branco */
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+    font-weight: 600; /* Deixa os textos levemente mais destacados */
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+}
+
+#top-bar a:hover {
+    text-decoration: none; /* Sublinhado ao passar o mouse */
+    color: #d1e8ff; /* Azul claro ao passar o mouse */
+}
