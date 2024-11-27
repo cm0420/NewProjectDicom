@@ -1,0 +1,222 @@
+body{
+    background-color: #F7F7F7;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+/*Styles Header e top-bar*/
+
+#top-bar {
+    background-color: #1a1f36; /* Cor azul escura da barra */
+    color: white;
+    padding: 15px 15px; /* Espaçamento interno para dar mais "respiro" */
+    font-size: 20px; /* Tamanho do texto */
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre os grupos de itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    font-family: 'Raleway', sans-serif; /* Mantém a tipografia consistente */
+}
+.left-section{
+    padding-left: 85px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.right-section{
+    padding-right: 74px;
+   
+}
+.right-section a {
+     /* Adiciona espaçamento interno */
+    border-left: 0.5px solid #e0e0e0; /* Barra fina entre os itens */
+}
+
+/* Estilizando os itens dentro da top-bar */
+#top-bar a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Links em branco */
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+    font-weight: 600; /* Deixa os textos levemente mais destacados */
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+}
+
+#top-bar a:hover {
+    text-decoration: none; /* Sublinhado ao passar o mouse */
+    color: #d1e8ff; /* Azul claro ao passar o mouse */
+}
+
+
+#main-header{
+    background-color: #2969bd;
+   
+}
+.container{
+    padding-block: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.250rem;
+    font-weight: 900;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+   
+    }
+.logo-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-button {
+    all: unset;
+}
+.hidden-menu {
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    position: absolute; /* Para evitar deslocamento do layout */
+    background-color: #2969bd;
+    padding: 10px;
+    margin-top: 3vh;
+    border: 1px solid black;
+}
+
+.hidden-menu.show {
+    display: flex; /* Mostra o menu quando a classe `show` é adicionada */
+    justify-items: center;
+    
+}
+.menu-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    color: #fff;
+
+}
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+.bottom-bar{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Container da barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Formulário */
+.search-bar form {
+    display: flex;
+    align-items: center;
+    background-color: #2969bd;
+    border-radius: 30px;
+    
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Campo de entrada */
+.search-bar input {
+    flex: 1;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.Logo-marca-Ufvjm{
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*Responsividade header e top bar*/
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #top-bar {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center; /* Centraliza os textos */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+
+    .right-section a {
+        margin: 5px 0; /* Reduz o espaçamento entre links */
+        padding-left: 0; /* Remove o espaçamento adicional à esquerda */
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    .left-section {
+        padding-left: 0; /* Remove espaçamento lateral */
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    #main-header .container {
+        margin: 0 15px; /* Reduz a margem lateral para telas menores */
+        padding-block: 10px; /* Reduz o espaçamento vertical */
+    }
+
+    .logo-header {
+        flex-direction: column; /* Empilha logo e título */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .bottom-bar {
+        flex-direction: column; /* Empilha itens da barra inferior */
+        align-items: center; /* Centraliza os itens */
+        gap: 15px; /* Adiciona espaço entre os elementos */
+        padding-top: 15px; /* Reduz o espaçamento superior */
+    }
+
+    .menu-icon {
+        flex-direction: column; /* Empilha os links do menu */
+        gap: 10px; /* Espaço entre os links */
+    }
+
+    .search-bar form {
+        max-width: 300px; /* Reduz a largura máxima */
+    }
+
+    .Logo-marca-Ufvjm {
+        width: 50px; /* Reduz o tamanho do logo */
+    }
+}
+
+@media (max-width: 480px) {
+    #top-bar {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas bem pequenas */
+    }
+
+    .right-section a {
+        font-size: 14px; /* Ajusta os links para telas menores */
+    }
+
+    .left-section {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .search-bar form {
+        width: 100%; /* Preenche a largura disponível */
+    }
+
+    #main-header .container h1 {
+        font-size: 1rem; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+

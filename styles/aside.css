@@ -1,0 +1,111 @@
+.info-aside {
+    display: grid;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-top: 5px solid #2969bd; 
+    border-left: 5px solid #2969bd;
+    border-bottom: 5px solid #2969bd;
+    border-bottom-left-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 1.6;
+    width: 300px;
+    border-top-left-radius: 15px;
+}
+
+.info-aside h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #2969bd;
+    margin-bottom: 10px;
+}
+
+.info-aside h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+   
+    margin-bottom: 10px;
+}
+
+.info-aside p {
+    
+    
+    font-family: 'Rawline', sans-serif;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+.info-aside-right {
+    display: grid;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-top: 5px solid #2969bd;
+    border-right: 5px solid #2969bd;
+    border-bottom: 5px solid #2969bd;
+    border-bottom-right-radius: 15px;
+    margin-top: 20px;
+    margin-right:10px;
+    line-height: 1.6;
+    width: 300px;
+    border-top-right-radius: 15px;
+}
+
+.info-aside-right  h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #2969bd;
+    margin-bottom: 10px;
+}
+
+.info-aside-right  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+   
+    margin-bottom: 10px;
+}
+
+.info-aside-right  p {
+    
+    
+    font-family: 'Rawline', sans-serif;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Responsividade para os asides */
+@media (max-width: 768px) {
+    .info-aside,
+    .info-aside-right {
+        width: 100%; /* Os asides ocuparão toda a largura da tela */
+        margin-left: 0; /* Remove margens laterais */
+        margin-right: 0;
+    }
+
+    .info-aside {
+        border-top-left-radius: 0; /* Remove borda arredondada nas laterais */
+        border-bottom-left-radius: 0;
+    }
+
+    .info-aside-right {
+        border-top-right-radius: 0; /* Remove borda arredondada nas laterais */
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-aside h2,
+    .info-aside h3,
+    .info-aside-right h2,
+    .info-aside-right h3 {
+        font-size: 20px; /* Reduz o tamanho dos títulos */
+    }
+
+    .info-aside p,
+    .info-aside-right p {
+        font-size: 16px; /* Reduz o tamanho dos parágrafos */
+    }
+}
+
+
+
